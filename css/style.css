@@ -1,0 +1,106 @@
+/* header */
+header{
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    padding: 6px;
+    padding-left: 20px;
+}
+/* container */
+#container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* container > card */
+.card{
+    background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    margin: 10px;
+    padding: 40px;
+    outline: 0.1px solid rgb(231, 231, 231);
+    border-radius: 8px;
+}
+/* flags-container */
+.flags-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+/* card > flag */
+.flag{
+    height: 160px;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+/* card > arms-flag */
+#arms-flag{
+    height: 160px;
+    width: 160px;
+    margin-left: auto;
+}
+/* information */
+.info{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+}
+/* button */
+.btn{
+    background: linear-gradient(to left, rgb(97, 72, 255), rgb(148, 34, 255));
+    color: white;
+    padding: 15px;
+    width: 150px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    border: 0px;
+    border-radius: 5px;
+}
+/* button - hover */
+.btn:hover{
+    background: linear-gradient(to left, rgb(64, 35, 255), rgb(135, 7, 255));
+}
+/* button > span */
+.btn span{
+    margin-left: 10px;
+}
+/* heading 1 */
+h1{
+    font-weight: 550;
+}
+/* ------------------
+----- MEDIA QUERY-----
+------------------ */
+/* max width 1088px */
+@media (max-width: 1088px) {
+    #container{
+        display: block;
+    }
+}
+/* max width 486px */
+@media (max-width: 486px) {
+    /* flags container */
+    .flags-container{
+        display: block;
+    }
+    /* card > flag */
+    .flag{
+        height: 100%;
+        width: 100%;
+    }
+    /* card > arms-flag */
+    #arms-flag{
+        height: 100%;
+        width: 100%;
+        margin-top: 15px;
+    }
+    /* button */
+    .btn{
+        height: auto;
+        width: 100%;
+    }
+    /* info */
+    .info{
+        display: block;
+    }
+}
